@@ -49,3 +49,23 @@ Developed by **Mr Tan**, this tool converts complex Nmap commands into a simple 
 - Nmaping installed
 ```bash
 pipx install nmaping
+```
+
+---
+
+# 🚀 2. PyPI DESCRIPTION (paste this in setup / PyPI long description)
+
+txt id="pypi_desc"
+Nmaping is a powerful Python-based Nmap automation toolkit designed for network scanning, port analysis, and security auditing.
+
+It simplifies complex Nmap commands into an interactive CLI interface, making it easier for ethical hackers, penetration testers, and cybersecurity learners to perform advanced scans.
+
+Features:
+- 20+ automated scan modes
+- Nmap timing control (-T0 to -T5)
+- Vulnerability scanning support
+- OS and service detection
+- Fast and aggressive scan options
+- Cross-platform support (Linux & Windows)
+
+This project is intended for educational and ethical use only.

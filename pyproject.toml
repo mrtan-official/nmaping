@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nmaping"
-version = "1.7"
+version = "1.8"
 authors = [
     { name="Abu Tanim", email="mrtanvai@gmail.com" },
 ]
@@ -22,7 +22,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/mrtan-official/Nmap-scaning"
+Homepage = "https://github.com/mrtan-official/nmaping"
 
 [tool.setuptools.packages.find]
 where = ["."]

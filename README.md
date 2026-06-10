@@ -1,41 +1,42 @@
-# Nmap-scaning 
-This code write by Mr Tan.
+# 🚀 Nmaping - Python Nmap Automation Tool
 
-An interactive and custom-built Nmap automation tool, completely designed and coded by me in Python to streamline network scanning and security assessments.
+A powerful and interactive **Nmap automation toolkit** built with Python for network scanning, port analysis, and security auditing.
 
-A powerful, interactive, and automated network scanning toolkit built with Python and Nmap. This tool simplifies complex network security auditing, vulnerability scanning, and port mapping, offering advanced speed control features for ethical hackers and penetration testers.
-
----
-
-## 🛠️ Key Features
-
-- **Comprehensive Scanning Modes**: Supports 16 different scan types including SYN, Version Detection, Vulnerability Assessment (`--script vuln`), OS Detection, Aggressive Scans, Firewall/IDS Detection, and more.
-- **Advanced Timing Controls**: Integrated with Nmap Timing Templates (`-T0` to `-T5`) allowing you to balance speed and stealth (Bypassing firewalls or performing rapid audits).
-- **Interactive Multi-Color CLI**: Beautiful, clean, and color-coded user interface designed for readability and professional output.
-- **Live Version Checker**: Automatically synchronizes and checks for updates with the GitHub source file.
-- **Cross-Platform Compatibility**: Fully optimized for Linux (Kali, Ubuntu) and Windows environments.
+Developed by **Mr Tan**, this tool simplifies complex Nmap commands into an easy-to-use CLI interface for ethical hackers, penetration testers, and cybersecurity learners.
 
 ---
 
-## 🚀 Timing Templates Guide
+## ⚡ Features
 
-This toolkit allows you to choose your scan intensity before every scan, giving you full control over performance and stealth:
-
-| Mode | Template | Description |
-| :--- | :---: | :--- |
-| **Paranoid** | `-T0` | Very slow, minimal noise, best for bypassing strict IDS/Firewalls. |
-| **Sneaky** | `-T1` | Slow, used to avoid detection during active monitoring. |
-| **Polite** | `-T2` | Moderate speed, consumes very low bandwidth. |
-| **Normal** | `-T3` | **Default Speed** - Balanced performance for standard networks. |
-| **Aggressive**| `-T4` | Fast and highly recommended for faster security auditing. |
-| **Insane** | `-T5` | Extremely fast, best for local lab testing (might drop packets). |
+- 🧠 16+ Advanced Scan Modes (SYN, OS Detection, Version Detection, Vuln Scan, etc.)
+- ⚡ Nmap Timing Control (`-T0` to `-T5`) for stealth and speed tuning
+- 🎨 Interactive Colorful CLI Interface
+- 🔄 Auto Update Checker (GitHub Sync Support)
+- 🌐 Cross-platform support (Linux & Windows)
+- 🛡️ Ethical hacking & security auditing toolkit
 
 ---
 
-## 📋 Prerequisites
+## 🧪 Scan Timing Levels
 
-Make sure you have **Nmap** installed on your system before running this toolkit.
+| Mode | Flag | Description |
+|------|------|-------------|
+| Paranoid | `-T0` | Very slow, maximum stealth |
+| Sneaky | `-T1` | Low detection risk |
+| Polite | `-T2` | Light network usage |
+| Normal | `-T3` | Default balanced scan |
+| Aggressive | `-T4` | Fast scanning |
+| Insane | `-T5` | Extremely fast (lab only) |
 
-### For Linux (Kali/Ubuntu):
+---
+
+## ⚙️ Requirements
+
+- Python 3.x
+- Nmap installed
+
+### 📌 Install Nmap
+
+**Linux (Kali/Ubuntu):**
 ```bash
-sudo apt update && sudo apt install nmap -y
+pipx install nmaping

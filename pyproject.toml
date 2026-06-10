@@ -4,17 +4,19 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nmaping"
-version = "1.5"
+version = "1.6"
 authors = [
     { name="Abu Tanim", email="mrtanvai@gmail.com" },
 ]
-description = "An automation and network scanning utility tool."
+description = "Python Nmap automation tool for network scanning and security auditing."
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.8"
+
 dependencies = [
     "requests",
 ]
-license = { text = "Custom License" }
+
+license = { text = "MIT" }
 
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -22,15 +24,14 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/mrtan-official/Nmap-scaning"
+Homepage = "https://github.com/mrtan-official/nmaping"
 
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["nmaping*"]
 
 [tool.setuptools.package-data]
-nmaping = ["*.so"]
+nmaping = ["*.txt", "*.md"]
 
 [project.scripts]
 nmaping = "nmaping.nmap:menu"
-

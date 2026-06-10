@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nmaping"
-version = "1.1"  # নতুন ভার্সন ১.৫ দিন
+version = "1.1"
 authors = [
     { name="Abu Tanim", email="mrtanvai@gmail.com" },
 ]
 description = "An automation and network scanning utility tool."
 readme = "README.md"
-requires-python = ">=3.13" # যেহেতু .so ফাইলটি শুধু পাইথন ৩.১৩ তে চলবে
+requires-python = ">=3.13"
 license = { text = "Custom License" }
 
 classifiers = [
@@ -21,15 +21,12 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/mrtan-official/Nmap-scaning"
 
-# সেটআপুলসকে অটোমেটিক nmaping ফোল্ডারটি খুঁজতে বলা হচ্ছে
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["nmaping*"]
 
-# প্যাকেজের ভেতরের সব .so ফাইল অন্তর্ভুক্ত করার নির্দেশ
 [tool.setuptools.package-data]
 nmaping = ["*.so"]
 
-# কালিতে সরাসরি রান করার জন্য স্ক্রিপ্ট এন্ট্রি পয়েন্ট
 [project.scripts]
 nmaping = "nmaping.nmap:menu"

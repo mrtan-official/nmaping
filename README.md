@@ -1,42 +1,51 @@
 # 🚀 Nmaping - Python Nmap Automation Tool
 
-A powerful and interactive **Nmap automation toolkit** built with Python for network scanning, port analysis, and security auditing.
+A powerful and automated **Nmap scanning toolkit** built with Python for network reconnaissance, port scanning, and security auditing.
 
-Developed by **Mr Tan**, this tool simplifies complex Nmap commands into an easy-to-use CLI interface for ethical hackers, penetration testers, and cybersecurity learners.
+Developed by **Mr Tan**, this tool converts complex Nmap commands into a simple interactive CLI interface for ethical hackers, penetration testers, and cybersecurity learners.
 
 ---
 
-## ⚡ Features
+## ⚡ Key Features
 
-- 🧠 16+ Advanced Scan Modes (SYN, OS Detection, Version Detection, Vuln Scan, etc.)
-- ⚡ Nmap Timing Control (`-T0` to `-T5`) for stealth and speed tuning
+- 🧠 16+ Automated Nmap Scan Modes
+- ⚡ Timing Control (`-T0` to `-T5`) for stealth & speed
 - 🎨 Interactive Colorful CLI Interface
-- 🔄 Auto Update Checker (GitHub Sync Support)
-- 🌐 Cross-platform support (Linux & Windows)
-- 🛡️ Ethical hacking & security auditing toolkit
+- 🔄 Auto Update Checker (GitHub Sync)
+- 🌐 Cross-platform (Linux & Windows)
+- 🛡️ Security & penetration testing tool
 
 ---
 
-## 🧪 Scan Timing Levels
+## 🔍 Supported Scan Types
+
+- SYN Scan
+- TCP Connect Scan
+- Version Detection
+- OS Detection
+- Aggressive Scan
+- Vulnerability Scan (`--script vuln`)
+- Firewall / IDS Evasion
+- Fast Scan Modes
+
+---
+
+## ⏱️ Timing Levels
 
 | Mode | Flag | Description |
 |------|------|-------------|
-| Paranoid | `-T0` | Very slow, maximum stealth |
+| Paranoid | `-T0` | Maximum stealth |
 | Sneaky | `-T1` | Low detection risk |
-| Polite | `-T2` | Light network usage |
-| Normal | `-T3` | Default balanced scan |
+| Polite | `-T2` | Light usage |
+| Normal | `-T3` | Default mode |
 | Aggressive | `-T4` | Fast scanning |
-| Insane | `-T5` | Extremely fast (lab only) |
+| Insane | `-T5` | Very fast (lab only) |
 
 ---
 
 ## ⚙️ Requirements
 
 - Python 3.x
-- Nmap installed
-
-### 📌 Install Nmap
-
-**Linux (Kali/Ubuntu):**
+- Nmaping installed
 ```bash
 pipx install nmaping
